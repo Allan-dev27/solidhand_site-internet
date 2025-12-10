@@ -42,12 +42,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Accueil<br></a></li>
+          <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="about.html">À propos</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="pricing.html">Tarification</a></li>
-       <ul>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -175,7 +174,7 @@
           <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
             <h3>Qui sommes nous ?</h3>
             <p>
-              Nous sommes un réseau d'entraide entre particuliers majoritairement pour les personnes en situation de handicap mais pas que. </br>
+              Nous sommes un réseau d'entraide entre particuliers majoritairement pour les personnes en situation de handicap mais pas que. <br>
               Notre but est de faciliter la vie quotidienne de chacun en mettant en relation des personnes ayant des compétences diverses et variées.
             </p>
                             <h4>Que proposons-nous ?</h4>
@@ -184,9 +183,9 @@
                 <i class="bi bi-diagram-3"></i>
                 <div>
                   <h5>Mise en place d'une base de données de compétences :</h5>
-                  <p>Chaque membre pourra renseigner ses compétences (informatique, bricolage, cuisine, etc.) afin de faciliter les échanges au sein du réseau.</br>
+                  <p>Chaque membre pourra renseigner ses compétences (informatique, bricolage, cuisine, etc.) afin de faciliter les échanges au sein du réseau.<br>
                     Ses besoins actuels (aide pour des démarches administratives, conseils en informatique, etc.)
-              </br> Sa disponibilité (jours et heures où il peut aider ou être aidé).</p>
+              <br> Sa disponibilité (jours et heures où il peut aider ou être aidé).</p>
                 </div>
               </li>
               <li>
@@ -194,7 +193,7 @@
                 <div>
                   <h5>Organisation d'actions d'entraide :</h5>
                   <p>Ateliers de formation ou de partage de compétences, groupes de discussion en ligne, journées de solidarité, événements réguliers et sessions "coup de pouce".
-                  </br> 
+                  <br>
                   </p>
                  </div>
               </li>
@@ -202,7 +201,7 @@
                 <i class="bi bi-broadcast"></i>
                 <div>
                   <h5>Animation du réseau :</h5>
-                  <p>Mise en avant des initiatives solidaires (témoignages, succès stories), communication régulière via newsletter et réseaux sociaux, coordination des membres pour des actions collectives.</br>
+                  <p>Mise en avant des initiatives solidaires (témoignages, succès stories), communication régulière via newsletter et réseaux sociaux, coordination des membres pour des actions collectives.<br>
                   Organisation d'événements conviviaux pour renforcer les liens entre membres.</p>
                 </div>
               </li>
@@ -420,7 +419,7 @@
               Un lien Helloasso est disponible sur le serveur Discord pour faire votre adhésion en ligne.
 L'adhésion est pour le moment fixé à 10€ selon les conventions de l'Asssemblée Générale annuelle. </p>
             <p>
-            Pourquoi adhérer ? </br>  C'est pour permettre à l'association de fonctionner (assurance, frais divers, etc.) et de vous offrir des services de qualité.
+            Pourquoi adhérer ? <br>  C'est pour permettre à l'association de fonctionner (assurance, frais divers, etc.) et de vous offrir des services de qualité.
             </p>
           </div>
         </div><!-- Features Item -->
@@ -461,54 +460,108 @@ L'adhésion est pour le moment fixé à 10€ selon les conventions de l'Asssemb
       </div>
 
     </section><!-- /Features Section -->
-<!-- Clients Section -->
-    <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Nos partenaires</span>
-        <h2>Nos partenaires</h2>
-      </div><!-- End Section Title -->    <section id="clients" class="clients section light-background">
+<<!-- Clients Section avec Carrousel -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Nos partenaires</h2>
+  <p>Nos partenaires</p>
+</div>
 
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
+<section id="clients" class="clients section light-background">
+  <div class="container" data-aos="fade-up">
+    
+    <!-- Swiper -->
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 2500,
+            "disableOnInteraction": false
+          },
+          "slidesPerView": 1,
+          "spaceBetween": 30,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "navigation": {
+            "nextEl": ".swiper-button-next",
+            "prevEl": ".swiper-button-prev"
+          },
+          "breakpoints": {
+            "640": {
+              "slidesPerView": 2,
+              "spaceBetween": 40
+            },
+            "992": {
+              "slidesPerView": 3,
+              "spaceBetween": 60
+            }
+          }
+        }
+      </script>
+      
+      <div class="swiper-wrapper align-items-center">
+        
+        <div class="swiper-slide">
+          <div class="client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="Partenaire 1">
+          </div>
         </div>
-
+        
+        <div class="swiper-slide">
+          <div class="client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="Partenaire 2">
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="Partenaire 3">
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="Partenaire 4">
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="Partenaire 5">
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="Partenaire 6">
+          </div>
+        </div>
+        
       </div>
+      
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
 
-    </section><!-- /Clients Section -->
+  </div>
+</section>
+<!-- /Clients Section -->
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Pricing</span>
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <span>Adhésion</span>
+        <h2>Adhésion</h2>
+        <p>Différentes types d'adhésion pour répondre à vos besoins</p>
       </div><!-- End Section Title -->
     
       
@@ -518,14 +571,13 @@ L'adhésion est pour le moment fixé à 10€ selon les conventions de l'Asssemb
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h3>Adhésion de base</h3>
+              <h4><sup>€</sup>5<span> / an</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Vous devenez adhérent à l'association</span></li>
+                <li><i class="bi bi-check"></i> <span>Vous bénéficiez de certains avantages</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Vous avez accès a notre plateforme d'entraide</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Vous pouvez répondre à une offre/répondre à une annonce</span></li>
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
@@ -533,8 +585,8 @@ L'adhésion est pour le moment fixé à 10€ selon les conventions de l'Asssemb
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-item featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
+              <h3>Adhésion</h3>
+              <h4><sup>€</sup>10<span> / an</span></h4>
               <ul>
                 <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
                 <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>

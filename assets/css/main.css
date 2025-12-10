@@ -57,10 +57,22 @@
   scroll-behavior: smooth;
 }
 /*--------------------------------------------------------------
-# Clients Section
+# Clients Section - Carrousel tournant
 --------------------------------------------------------------*/
 .clients {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.clients .swiper {
   padding: 20px 0;
+}
+
+.clients .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .clients .client-logo {
@@ -68,24 +80,70 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 20px;
+  transition: 0.3s;
 }
 
 .clients .client-logo img {
-  padding: 20px 40px;
-  max-width: 90%;
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
+  opacity: 0.6;
+  filter: grayscale(100%);
 }
 
-.clients .client-logo img:hover {
-  filter: none;
+.clients .client-logo:hover img {
+  filter: grayscale(0);
   opacity: 1;
+  transform: scale(1.1);
 }
 
-@media (max-width: 640px) {
+/* Navigation buttons styling */
+.clients .swiper-button-next,
+.clients .swiper-button-prev {
+  color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  background: rgba(205, 164, 94, 0.1);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.clients .swiper-button-next:hover,
+.clients .swiper-button-prev:hover {
+  background: rgba(205, 164, 94, 0.2);
+}
+
+.clients .swiper-button-next::after,
+.clients .swiper-button-prev::after {
+  font-size: 20px;
+}
+
+/* Pagination dots styling */
+.clients .swiper-pagination-bullet {
+  background: var(--accent-color);
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+}
+
+.clients .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--accent-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .clients .client-logo img {
-    padding: 20px;
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients .client-logo img {
+    max-height: 60px;
   }
 }
 /*--------------------------------------------------------------
